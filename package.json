@@ -1,0 +1,40 @@
+{
+  "name": "@rezzed/rate-gate",
+  "version": "1.0.0",
+  "description": "Sliding window rate limiter with pluggable backends",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/esm/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
+    "test": "node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "rate-limit",
+    "rate-limiter",
+    "sliding-window",
+    "throttle",
+    "middleware"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rezzedai/rate-gate.git"
+  },
+  "author": "Rezzed.ai",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
