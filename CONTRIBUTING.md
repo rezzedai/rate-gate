@@ -1,4 +1,4 @@
-# Contributing to @rezzed/rate-gate
+# Contributing to @rezzed.ai/rate-gate
 
 Thank you for your interest in contributing to rate-gate! We welcome contributions that improve the library's functionality, performance, and documentation.
 

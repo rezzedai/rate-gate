@@ -1,21 +1,21 @@
-# @rezzed/rate-gate
+# @rezzed.ai/rate-gate
 
-[![npm version](https://img.shields.io/npm/v/@rezzed/rate-gate.svg)](https://www.npmjs.com/package/@rezzed/rate-gate)
+[![npm version](https://img.shields.io/npm/v/@rezzed.ai/rate-gate.svg)](https://www.npmjs.com/package/@rezzed.ai/rate-gate)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js Version](https://img.shields.io/node/v/@rezzed/rate-gate.svg)](https://nodejs.org)
+[![Node.js Version](https://img.shields.io/node/v/@rezzed.ai/rate-gate.svg)](https://nodejs.org)
 
 A lightweight, flexible sliding window rate limiter with pluggable storage backends.
 
 ## Installation
 
 ```bash
-npm install @rezzed/rate-gate
+npm install @rezzed.ai/rate-gate
 ```
 
 ## Quick Start
 
 ```typescript
-import { createRateGate } from '@rezzed/rate-gate';
+import { createRateGate } from '@rezzed.ai/rate-gate';
 
 // Create a rate limiter: 10 requests per minute
 const gate = createRateGate({
@@ -66,7 +66,7 @@ const gate = createRateGate({
 Create a rate limiter with a custom backend.
 
 ```typescript
-import { RateGate, MemoryBackend } from '@rezzed/rate-gate';
+import { RateGate, MemoryBackend } from '@rezzed.ai/rate-gate';
 
 const gate = new RateGate(
   { limit: 100, windowMs: 60000 },
@@ -145,7 +145,7 @@ class RateLimitError extends Error {
 Implement the `RateGateBackend` interface to use custom storage:
 
 ```typescript
-import { RateGate, RateGateBackend } from '@rezzed/rate-gate';
+import { RateGate, RateGateBackend } from '@rezzed.ai/rate-gate';
 
 class RedisBackend implements RateGateBackend {
   constructor(private redis: RedisClient) {}
