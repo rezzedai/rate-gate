@@ -1,5 +1,5 @@
 {
-  "name": "@rezzed/rate-gate",
+  "name": "@rezzed.ai/rate-gate",
   "version": "1.0.0",
   "description": "Sliding window rate limiter with pluggable backends",
   "type": "module",

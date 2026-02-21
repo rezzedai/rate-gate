@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-02-20
 
 ### Added
-- Initial release of @rezzed/rate-gate
+- Initial release of @rezzed.ai/rate-gate
 - Sliding window rate limiting algorithm for accurate request throttling
 - Pluggable backend system supporting custom storage implementations
 - Built-in MemoryBackend for zero-dependency usage
